@@ -93,4 +93,48 @@ Make sure you have installed:
 git clone https://github.com/reshmaramesh00/Dri-verse-Where-technology-meets-innovation.git
 ```
 
-### 2. Open
+### 2. Open the project
+
+cd Dri-verse-Where-technology-meets-innovation
+
+3. Set up the database
+
+Start your MySQL server.
+
+Create a database named drivers_db.
+
+Import or execute the provided database.sql file.
+
+Configure your local database credentials.
+
+4. Configure database credentials
+
+Create src/main/resources/application.properties locally:
+
+spring.application.name=driverse
+spring.datasource.url=jdbc:mysql://localhost:3306/drivers_db
+spring.datasource.username=root
+spring.datasource.password=${DB_PASSWORD}
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+Set the DB_PASSWORD environment variable to your MySQL password. The local configuration file is excluded from GitHub.
+
+5. Build the project
+
+./mvnw clean package
+
+6. Run the Spring Boot application
+
+./mvnw spring-boot:run
+
+🎯 Project Objective
+
+The main objective of Dri-verse is to transform traditional driving school management into a more efficient digital system by connecting learners, instructors and administrators through a unified platform.
+
+🏫 Academic Project
+
+Developed as part of the B.Tech Computer Science and Engineering programme.
+
+Project Name: Dri-verse – Where Technology Meets Innovation
+
+Making driving school management smarter, simpler and more connected. 🚗
