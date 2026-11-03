@@ -1,57 +1,96 @@
-DRI-VERSE - PROJECT SETUP
+# 🚗 Dri-verse – Where Technology Meets Innovation
 
-STEP 1: INSTALL REQUIREMENTS
-- Install Java (JDK 21 or later)
-- Install MySQL Community Server
-- Install VS Code or IntelliJ IDEA
+**A Smart Driving School Management System**
 
-STEP 2: SET UP THE DATABASE
-1. Open MySQL.
-2. Open the file:
-   database.sql
-3. Run the complete SQL script.
-4. This creates the drivers_db database and users table.
+Dri-verse is a software-based Driving School Management System designed to simplify and digitize driving school operations. It provides a centralized platform for learners, instructors and administrators to manage driving lessons, instructor requests, payments and learner activities.
 
-STEP 3: CONFIGURE THE DATABASE PASSWORD
-Open:
+The project aims to make driving school management more efficient, organized and accessible through technology.
 
-src/main/resources/application.properties
+## ✨ Key Features
 
-Find:
+### 👨‍🎓 Learner Module
+- User registration and login
+- Learner dashboard
+- Browse available driving instructors
+- Send instructor requests
+- Class scheduling
+- Learner test registration
+- Payment submission and payment status tracking
+- Mock test support
 
-spring.datasource.password=ENTER_YOUR_MYSQL_PASSWORD
+### 🚘 Instructor Module
+- Instructor dashboard
+- Manage learner requests
+- View assigned learners
+- Manage driving lesson schedules
+- Review learner payment requests
 
-Replace ENTER_YOUR_MYSQL_PASSWORD with your own MySQL root password.
+### 🛠️ Admin Module
+- Administrative dashboard
+- Manage users and system activities
+- Monitor driving school operations
 
-STEP 4: START THE BACKEND
-Open a terminal in the project folder.
+### 🔐 Additional Features
+- Forgot password functionality
+- Database connectivity
+- Payment approval workflow
+- Role-based access
 
-Mac/Linux:
-./mvnw spring-boot:run
+## 💻 Technologies Used
 
-Windows:
-mvnw.cmd spring-boot:run
+| Technology | Purpose |
+|---|---|
+| Java | Core programming language |
+| Java Swing | Desktop user interface |
+| Spring Boot | Backend development |
+| JDBC | Database connectivity |
+| MySQL | Database management |
+| Maven | Project build and dependency management |
+| VS Code | Development environment |
+| Git & GitHub | Version control |
 
-Wait until you see:
+## 📂 Project Structure
 
-Started DriversApplication
+```text
+Dri-verse/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── Dri_verse/
+│   │   │       ├── controller/
+│   │   │       ├── model/
+│   │   │       ├── repository/
+│   │   │       ├── service/
+│   │   │       └── view/
+│   │   │
+│   │   └── resources/
+│   │       └── images/
+│   │
+│   └── test/
+│
+├── database.sql
+├── pom.xml
+├── mvnw
+├── README.md
+└── .gitignore
+```
 
-IMPORTANT:
-Keep this terminal running while using the application.
+## ⚙️ Installation and Setup
 
-STEP 5: RUN THE APPLICATION
-Open:
+### Prerequisites
 
-src/main/java/Dri_verse/view/RegistrationFrame.java
+Make sure you have installed:
 
-Run the Java file.
+- Java JDK
+- MySQL Server
+- Visual Studio Code (or another Java IDE)
+- Git
 
-The Registration page should open.
+### 1. Clone the repository
 
-You can:
-- Register a new student/instructor
-- Click LOGIN to open the Login page
-- Test login using the registered account
+```bash
+git clone https://github.com/reshmaramesh00/Dri-verse-Where-technology-meets-innovation.git
+```
 
-IMPORTANT:
-The Spring Boot backend must be running before using Registration or Login.
+### 2. Open
